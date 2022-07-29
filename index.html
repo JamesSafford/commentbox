@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comment box</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form>
+      <div class='form form-name'>
+        <label for='name'>Name</label>
+        <input type='text' required='required' id='name' placeholder='Enter your first and last name'/>
+      </div>
+      <div class='form form-email'>
+        <label for='email'>Email</label>
+        <input type="email" required='required' id='email' placeholder='Enter your email address'>
+      </div>
+      <div class='form form-comment'>
+      <label for='comment'>Comment</label>
+      <input type='text' required='required' id='comment' placeholder='Tell me what you relly think'/>
+      <div class="form copy-count" id="copycount">140 characters remaining</div>
+      </div>
+
+
+      <div class='form form-submit'>
+        <button class='submit-button' type='submit' id='submit-button'>Submit Form</button>
+      </div>
+    </form>
+
+ <!-- `   <div class="form-response">
+      <span class="form-response-name"> ${name}</span>
+      <span class="form-response-email"> ${email}</span>
+      <span class="form-response-timestamp"> ${timestamp}</span>
+    </div>
+    <span class="form-response-body">${comment}</span>
+` -->
+
+	<script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+<!-- 
+<div class='message-invalid'>Bitte geben Sie einen Text ein</div>
+</div>
+<div class='fieldset is-invalid'>
+  <label for='textarea2'>Textarea (invalid)</label>
+  <textarea id='textarea2' placeholder='Field Textarea'></textarea>
+  <div class='message-invalid'>Details about what is invalid.</div>
+</div>
+<div class='fieldset error'>
+  <label for='select1'>Select (invalid)</label>
+  <select id='select1' placeholder='Field Textarea'>
+    <option value=''>Choose</option>
+    <option value='Choose'>Choose</option>
+    <option value='Choose'>Choose</option>
+    <option value='Choose'>Choose</option>
+    <option value='Choose'>Choose</option>
+  </select>
+  <div class='message-error'>Details about what is invalid.</div>
+</div>
+</form>
+<div class='message message--success'>Success message</div> -->
