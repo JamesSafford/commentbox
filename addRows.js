@@ -4,21 +4,22 @@ function onSubmit (event) {
   const name = document.getElementById('name').value;
   const comment = document.getElementById('comment').value;
   const form = document.getElementById('form');
-
+  const date = new Date();
 
   let totalCharacters = commentArea.value.length;
   if (totalCharacters > 140) {
     event.preventDefault();
     alert('You have used a few too many characters, try again');
   } else {
-    createComment(name, comment);
+    createComment(name, comment, date);
     form.reset();
   }
 }
 
-function createComment (name, comment) {
+function createComment (name, comment, date) {
 
 const commentContent = `<div class="form-response">
+<span class="form-response-date">${date}:&nbsp</span>
 <span class="form-response-name">${name} said</span>
 <span class="form-response-body">&nbsp"${comment}"</span>
 </div>
@@ -30,6 +31,7 @@ const commentContent = `<div class="form-response">
   commentLocation.appendChild(addCommentName);
 
   addCommentName.innerHTML = commentContent;
+
 } 
 
 
